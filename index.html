@@ -9,17 +9,21 @@
     <script src="node_modules/react/dist/react.js"></script>
     <script src="node_modules/react-dom/dist/react-dom.js"></script>
     <script>
-      const MyTitle = function () {
+      const MyTitle = function (props) {
         return (
           React.createElement('div', null,
-            React.createElement('h1', null, 'My second component')
+            React.createElement('h1', null, props.title)
           )
         )
       }
 
       const MyFirstComponent = function () {
         return React.createElement('div', {id: 'my-first-component'},
-          React.createElement(MyTitle),
+          React.createElement(MyTitle, {title: 'Rick and Morty' }),
+          React.createElement(MyTitle, {title: 'Silicon Valley' }),
+          React.createElement(MyTitle, {title: 'Disjointed' }),
+          React.createElement(MyTitle, {title: 'Amazing Hotels' }),
+          React.createElement(MyTitle, {title: 'Dude' }),
         )
       }
 
