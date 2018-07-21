@@ -9,15 +9,23 @@
     <script src="node_modules/react/dist/react.js"></script>
     <script src="node_modules/react-dom/dist/react-dom.js"></script>
     <script>
-      const MyFirstComponent = function() {
-        return React.createElement('div', null,
-          React.createElement('h1', null, 'First component!')
+      const MyTitle = function () {
+        return (
+          React.createElement('div', null,
+            React.createElement('h1', null, 'My second component')
+          )
         )
       }
 
-      ReactDom.render(
+      const MyFirstComponent = function () {
+        return React.createElement('div', {id: 'my-first-component'},
+          React.createElement(MyTitle),
+        )
+      }
+
+      ReactDOM.render(
         React.createElement(MyFirstComponent),
-        document.getElementById('app')
+        document.getElementById('app'),
       )
     </script>
   </body>
