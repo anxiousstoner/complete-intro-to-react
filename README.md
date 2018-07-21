@@ -1,10 +1,15 @@
-# A Complete Intro to React
+# Learning everything React from btholt (Front-End Masters) 
 
-Welcome to a complete intro to React! The site actual workshop material for this repo can be found [here][gh-page]. On the master branch you will find the completed project. On the start branch you will find the barebones boilerplate of the project designed to help you get started.
+Go to start branch to start. 
 
-## Contributing
+These course files will be modified as I learn React.  If you would like to learn react please visit the original repo: http://btholt.github.io/complete-intro-to-react/ 
 
-Please contribute, file issues, and make PRs. More than anything I'm sure there are typos abounding.
+# My progress: 
+
+- Learnt NPM.
+- Learnt what .gitignore does and how to use it to ignore .nodemodules and uneeded files.  
+- Learnt about Yarn and Yarn lock. 
+- Learnt about createElement and creating simple React components without jsx. 
 
 ## License
 
